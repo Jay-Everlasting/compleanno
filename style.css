@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chivo Mono', sans-serif;
+}
+
+.normale {
+    background-color: #264653;
+}
+
+.magiorenne {
+    background: linear-gradient(45deg, rgba(41,73,54,1) 0%, rgba(39,251,107,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.minorenne {
+    background: linear-gradient(45deg, rgba(102,0,0,1) 0%, rgba(225,86,52,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.festa {
+    background-image: url('img-festa.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.contenitore {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.accesso {
+    background-color: #2a9d8f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    box-shadow: 0px 0px 68px 38px rgba(255,255,255,0.1);
+    padding: 60px 0;
+}
+
+.parametro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    color: #FCF7E9;
+}
+
+.par_data {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+label {
+    margin-bottom: -8px;
+    font-size: 18px;
+}
+
+.titolo_secondo {
+    align-self: center;
+    grid-column: 1/-1;
+    margin-bottom: -3px;
+}
+
+input {
+    background-color: #e9c46a;
+}
+
+.lunga {
+    font-family: 'Chivo Mono', sans-serif;
+    width: 300px;
+    font-size: 20px;
+    padding-left: 4px;
+}
+
+.corto {
+    font-family: 'Chivo Mono', sans-serif;
+    width: 60px;
+    font-size: 20px;
+    padding-left: 4px;
+}
+
+.dip_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.btn {
+    font-family: 'Chivo Mono', sans-serif;
+    font-size: 20px;
+    padding: 5px 15px;
+    background-color: #e9c46a;
+
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e76f51;
+    color: #FCF7E9;
+    box-shadow: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 15px rgba(255,255,255,0.1);
+}
+
+.errore {
+    grid-column: 1/-1;
+}
+
+.nascosto {
+    display: none;
+}
+
+.messaggio {
+    font-size: 36px;
+    color: #FCF7E9;
+}
+
+.titolo {
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.81);
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LIS pagina accesso</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body" class="normale">
+    <div class="contenitore">
+      <h1 id="titolo" class="titolo">ISCRIZIONE</h1>
+      <div id="accesso" class="accesso">
+        <div class="parametro">
+          <label>Nome</label>
+          <input type="text" id="nome" class="lunga" value="" />
+          <p class="errore nascosto"></p>
+        </div>
+        <div class="parametro">
+          <label>Cognome</label>
+          <input type="text" id="cognome" class="lunga" value="" />
+          <p class="errore nascosto"></p>
+        </div>
+        <div class="par_data">
+          <label class="titolo_secondo">Data di nascita</label>
+          <label>Giorno</label>
+          <label>Mese</label>
+          <label>Anno</label>
+          <input type="text" id="giorno" class="corto" maxlength="2" value="" />
+          <input type="text" id="mese" class="corto" maxlength="2" value="" />
+          <input type="text" id="anno" class="corto" maxlength="4" value="" />
+          <p class="errore nascosto"></p>
+        </div>
+        <div class="dip_btn">
+          <button class="btn" onclick="check()">Check</button>
+          <button class="btn" onclick="reset()">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
